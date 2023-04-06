@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast</title>
+    <link rel="stylesheet" href="./style.css">
+    
+
+</head>
+
+<body>
+    <div class="parent">
+        <div class="weather">
+            
+            <input type="search" id="city" class="search_bar" placeholder="Search City">
+
+            <div class="weather_today">
+              <button type="button" class="btn btn-search-today">
+                  <p>Click Me</p>
+                  <i class="fas fa-search"> </i>
+              </button>
+          </div>
+            <div class="city-history">
+                <h2 class="weather_city">City </h2>
+                <div id="search-history-container">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <article class="weather_details">
+                <p class="weather_today">
+                <h2> Weather in <span id="cityVal"></span></h2>
+                <p id="date-time"></p>
+                </p>
+                <div class="weather_current"></div>
+                <img src="" alt="" id="weather-icon">
+                <p class="weather_indicator" id="temperature"><span class="value"></span></p>
+                <p class="weather_indicator" id="humidity"><span class="value"></span></p>
+                <p class="weather_indicator" id="wind-speed"><span class="value"></span></p>
+            </article>
+
+
+            <div class="weather_forecast" id="five-day-forecast"><h2> 5 Day Forecast </h2> 
+           
+                <article class="weather_forecast_item">
+                    <h3 class="weather_forecast_day"></h3>
+                    <img src="" alt="" id="weather-icon">
+                    <p class="weather_forecast_results"> <span class="value"></span>&deg;</p>
+                </article>
+
+                <article class="weather_forecast_item" id="five-day-forecast">
+                    <h3 class="weather_forecast_day"></h3>
+                    <img src="" alt="" id="weather-icon">
+                    <p class="weather_forecast_results"> <span class="value"></span>&deg;</p>
+                </article>
+
+                <article class="weather_forecast_item" id="five-day-forecast">
+                    <h3 class="weather_forecast_day"></h3>
+                    <img src="" alt="" id="weather-icon">
+                    <p class="weather_forecast_results"> <span class="value"></span>&deg;</p>
+                </article>
+
+                <article class="weather_forecast_item" id="five-day-forecast">
+                    <h3 class="weather_forecast_day"></h3>
+                    <img src="" alt="" id="weather-icon">
+                    <p class="weather_forecast_results"> <span class="value"></span>&deg;</p>
+                </article>
+
+                <article class="weather_forecast_item" id="five-day-forecast">
+                    <h3 class="weather_forecast_day"></h3>
+                    <img src="" alt="" id="weather-icon">
+                    <p class="weather_forecast_results"> <span class="value"></span>&deg;</p>
+                </article>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1.10.7/dayjs.min.js"></script>
+    <script src="./script.js"></script>
+
+</body>
+
+</html>

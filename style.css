@@ -1,0 +1,132 @@
+body {
+    width: 80%;
+    height: 100vh;
+    padding: 20px;
+    margin: 0;
+    background-color: rgb(2, 2, 18);
+    color: white;
+    font-family: 300;
+    font-size: 22px;
+}
+
+#search-history-container{
+  margin-left:20px;
+  font-size: 30px;
+  
+
+}
+
+.weather {
+    width: 20%;
+    background-color: silver;
+    margin: 0 auto;
+    padding: 20px 0;
+    box-sizing: border-box;
+    white-space: nowrap;
+}
+
+.search_bar {
+    width: 75%;
+    padding: 15px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(155, 180, 215);
+    font-size: 20px;
+    color: inherit;
+    margin-bottom:20px;
+    margin-left:20px;
+
+}
+
+.weather_search::placeholder {
+    color:white;
+}
+
+.weather_today {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#weather-icon {
+    align-self: center;
+    max-width: 30px;
+    min-width: 30px;
+    max-height: 50px;
+    min-height: 50px;
+}
+
+.weather_city {
+    font-size: 30px;
+    font-weight: 550;
+    margin: 20px 0;
+    margin-left:20px;
+
+}
+
+.weather_today {
+   font-size: 30px;
+   margin: 10px 0;
+   font-weight: 400px;
+   margin-left:20px;
+
+}
+
+.weather_indicator::before {
+   content: '';
+   display: inline-block;
+   vertical-align: middle;
+   width: 30px;
+   height: 30px;
+   background-size: cover;
+   margin-right: 10px;
+   
+}
+
+.weather_temperature { 
+   font-size: 60px;
+}
+
+
+.weather_forecast {
+   width: 100%;
+   text-align: center;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+}
+
+#weather-icon {
+   max-width: 50%;
+}
+
+.weather_forecast_item {
+  background-color:rgb(155, 180, 215);
+  border-radius: 10px;
+  margin: 0 10px 10px;
+  padding: 30px 5px 20px;
+  box-sizing: border-box;
+  min-width: 20px;
+  width: calc (20% -20px);
+  flex-grow: 1;
+  
+}
+
+.btn btn-search-today {
+  background-color:rgb(155, 180, 215);
+  border-radius: 10px;
+  box-sizing: border-box;
+  height: 80px;
+  
+}
+
+.parent {
+  display: flex;
+  flex-direction: row;
+}
+
+.container { 
+  width: 80%;
+  margin-left:20px;
+
+}
